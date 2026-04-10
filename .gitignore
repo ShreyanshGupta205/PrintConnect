@@ -1,0 +1,13 @@
+# Local Configuration
+config/setup_config.php
+
+# Database
+*.db
+printconnect.db
+
+# Logs & Temp
+php_errors.log
+tmp/
+*.zip
+*.ps1
+!.gitignore

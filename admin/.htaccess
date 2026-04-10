@@ -1,0 +1,15 @@
+# Protect admin directory
+# 1. Require authentication (Optional, but recommended)
+# AuthType Basic
+# AuthName "Restricted Area"
+# AuthUserFile /path/to/.htpasswd
+# require valid-user
+
+# 2. Prevent directory listing
+Options -Indexes
+
+# 3. Deny access to sensitive files
+<FilesMatch "\.(sql|db|bak|conf|dist|fla|inc|ini|log|psd|sh|sql|swp|tpl|tcl|php\.zip)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
