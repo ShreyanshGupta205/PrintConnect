@@ -5,7 +5,7 @@
 // ==========================================
 // 1. Change $use_sqlite to false
 // 2. Fill in the MySQL credentials provided by InfinityFree (vPanel)
-$use_sqlite = true; 
+$use_sqlite = false; 
 
 $mysql_host = 'sql100.byetcluster.com'; // InfinityFree MySQL Hostname
 $mysql_db   = 'if0_41320767_printconnect'; // InfinityFree Database Name
